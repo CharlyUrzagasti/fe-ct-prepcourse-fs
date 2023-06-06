@@ -13,17 +13,19 @@ this.apellido=apellido;
 this.edad=edad;
 this.domicilio=domicilio;
 this.detalle= function(){
-return { 
-    Nombre: this.nombre,
+  return{ 
+   Nombre: this.nombre,
    Apellido:this.apellido,
    Edad: this.edad, 
    Domicilio:this.domicilio
-}
+  } 
 }
 }
 
-
 }
+
+
+
 
 
 function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
@@ -44,7 +46,7 @@ function agregarMetodo() {
    Persona.prototype.datos=function(){
       return (this.nombre + "," + this.edad +"años");
 }
-
+return datos;
 }
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

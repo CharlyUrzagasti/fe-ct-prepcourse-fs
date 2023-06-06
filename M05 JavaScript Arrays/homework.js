@@ -228,21 +228,24 @@ function breakStatement(num) {
    // Tu código:
 
    var resultado = [];
-   var suma = num;
-   for (var i = 0; i < 10; i++) {
-      suma = suma + 2;
-      if (suma === i) {
-         break;
-      } else {
-         resultado.push(suma)
-      }
-   }
-   if (resultado.length < 10) {
-      return "Se interrumpio la ejecución";
-   } else if (resultado.length === 10) {
-      return resultado;
-   }
+  var suma = num;
+  for (var i = 0; i < 10; i++) {
+     suma = suma + 2;
+     if (suma === i) {
+      break;  
+     } else {
+        resultado.push(suma)
+     }
+  }
+  
+  if (resultado.length < 10) {
+     return "Se interrumpio la ejecución";
+  } else if (resultado.length === 10) {
+     return resultado;
+  }
 }
+   
+
 
 
 
